@@ -17,7 +17,94 @@
 * 1.2 The Ladder of Causation: Seeing, Doing, Imagining.
 * 1.3 Simpson’s Paradox: The "Bad-Bad-Good" Drug and Berkeley Admissions.
 * 1.4 Structural Causal Models (SCMs) vs. Regression Models.
+* 1.1 Why Study Causation? (The "Causal Revolution").
+* 1.2 The Ladder of Causation: Seeing, Doing, Imagining.
+* 1.3 Simpson’s Paradox: The "Bad-Bad-Good" Drug and Berkeley Admissions.
+* 1.4 Structural Causal Models (SCMs) vs. Regression Models.
 * **Exercises:** Python Colab: Simulating Simpson’s Paradox with TSLA and NVDA data.
+
+
+
+Understood. Focusing strictly on the specific modules you listed, here is the structured outline for **Chapter 2: Potential Outcomes and Counterfactuals**, modeled directly after your Chapter 1 format.
+
+---
+
+## **Chapter 2: Potential Outcomes and Counterfactuals**
+
+### **2.1 The Fundamental Problem of Causal Inference**
+
+We introduce the concept of "missing data" as the heart of causation. For any individual, we observe the outcome under treatment *or* control, but never both.
+
+* **The Potential Outcomes Framework:** Defining  and .
+* **The Counterfactual:** The "what if" that exists only in theory but drives our causal logic.
+
+### **2.2 Hypothetical Interventions and the -operator**
+
+Moving beyond passive observation. We define an intervention as a targeted manipulation of the system.
+
+* **Seeing vs. Doing:** Why  (conditional probability) is not the same as  (interventional probability).
+* **Graph Surgery:** How an intervention physically removes the influence of prior causes on the treated variable.
+
+### **2.3 Defining and Measuring Causal Effects**
+
+How do we quantify the "gap" between the two worlds?
+
+* **Individual Treatment Effect (ITE):** .
+* **Average Treatment Effect (ATE):** The expected value of the difference across the population: .
+* **Relative vs. Absolute Effects:** Interpreting the magnitude of change.
+
+### **2.4 Causal Assumptions and SUTVA**
+
+To bridge the gap between observed data and causal truth, we must rely on "Stable Unit Treatment Value Assumptions."
+
+* **No Interference:** One person's treatment doesn't affect another's outcome.
+* **Consistency:** The treatment is uniform (no "hidden" versions of the drug).
+* **Exchangeability:** The idea that the treated and untreated groups are comparable.
+
+### **2.5 Stratification: The Path to Comparability**
+
+When groups aren't naturally exchangeable, we force it.
+
+* **Sub-group Analysis:** Breaking the population into "strata" (e.g., age, income, ticker volatility) where the treatment assignment is "as good as random."
+* **Weighted Averages:** Recombining strata to estimate the population-level effect.
+
+---
+
+### **Exercises: Python Colab**
+
+**Simulating Counterfactuals with Market Interventions.**
+
+* **Task:** Use Python to simulate a "Flash Crash" intervention.
+* **Objective:** Compare the observed price of a stock (e.g., NVDA) during a liquidity crisis against a simulated "counterfactual" where a circuit breaker (intervention) was never triggered.
+
+---
+
+### **Learning Modules**
+
+* **Potential Outcomes and Counterfactuals**
+* *Video. Duration: 13 min*
+
+
+* **Hypothetical Interventions**
+* *Video. Duration: 17 min*
+
+
+* **Causal Effects**
+* *Video. Duration: 19 min*
+
+
+* **Practice Quiz: The Logic of the Counterfactual**
+* *Practice Assignment. Duration: 30 min*
+
+
+* **Causal Assumptions: SUTVA and Exchangeability**
+* *Video. Duration: 18 min*
+
+
+* **Stratification: Adjusting for the Difference**
+* *Video. Duration: 15 min*
+
+
 
 **Chapter 2: Probability and Statistics Essentials for AI**
 
